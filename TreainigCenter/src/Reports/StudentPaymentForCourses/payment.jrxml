@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0031b723-2cd1-4854-a55a-734387858f15">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="style1" backcolor="#CCCCCC">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2==0]]></conditionExpression>
+			<style mode="Opaque"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="d1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="d2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select p.tableid ,to_char(p.paydate,'DD/MON/YYYY'),s.stdyear,s.stdname,c.coursename,c.code,com.comvalue from payroll p JOIN students s on S.STDID=P.STDID JOIN COMISSIONS com on COM.TABLEID=P.PCT FULL JOIN GROUPS g on G.TABLEID =P.COURSEID FULL JOIN groups gg on GG.TABLEID=G.GROUPID JOIN courses c on C.COURSEID=P.COURSEID WHERE P.PAYDATE BETWEEN to_date($P{d2},'dd/mm/yyyy') and to_date($P{d1},'dd/mm/yyyy')]]>
+	</queryString>
+	<field name="TABLEID" class="java.math.BigDecimal"/>
+	<field name="TO_CHAR(P.PAYDATE,&apos;DD/MON/YYYY&apos;)" class="java.lang.String"/>
+	<field name="STDYEAR" class="java.math.BigDecimal"/>
+	<field name="STDNAME" class="java.lang.String"/>
+	<field name="COURSENAME" class="java.lang.String"/>
+	<field name="CODE" class="java.lang.String"/>
+	<field name="COMVALUE" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="92" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Opaque" x="85" y="0" width="470" height="60" backcolor="#999999" uuid="654b7f66-5bc1-4efe-b3ae-bb6001f525d4"/>
+			</rectangle>
+			<image>
+				<reportElement mode="Transparent" x="0" y="0" width="85" height="92" uuid="79dec574-d4a8-40bc-aa50-cfe2273487b1"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+				<imageExpression><![CDATA["HTI_Logo.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="85" y="0" width="417" height="42" forecolor="#FFFFFF" uuid="35cec5e7-9012-4714-be3a-b6d0a6a3ca7c"/>
+				<box leftPadding="2"/>
+				<textElement>
+					<font fontName="Batang" size="27" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Payment Schedule Report]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="85" y="60" width="470" height="32" backcolor="#CCCCCC" uuid="503bf805-0295-4f30-91c9-dea33ddeacff"/>
+			</rectangle>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="313" y="60" width="240" height="32" uuid="81bbe390-f7b7-43d7-96d7-422059853987"/>
+				<box rightPadding="4"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="310" y="0" width="86" height="20" forecolor="#FFFFFF" backcolor="#000000" uuid="4a230565-38e2-4865-aa38-cdc4dc89b61e"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Course Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="239" y="0" width="71" height="20" forecolor="#FFFFFF" backcolor="#000000" uuid="d0547822-3861-4b2c-877d-7fabb01f2b68"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Course Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="23" height="20" forecolor="#FFFFFF" backcolor="#000000" uuid="18fdfcf1-f320-4132-9de6-ead4aad0fbc3"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Seq]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="23" y="0" width="59" height="20" forecolor="#FFFFFF" backcolor="#000000" uuid="83754a01-133c-46a6-817e-02fa130ac73b"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Recipt NO.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="82" y="0" width="59" height="20" forecolor="#FFFFFF" backcolor="#000000" uuid="c23448dd-4dc4-464d-a6ce-7d362fa5c370"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Std. Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="476" y="0" width="79" height="20" forecolor="#FFFFFF" backcolor="#000000" uuid="0333d526-acb6-4729-90cc-db90b20f1455"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Comission (%)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="141" y="0" width="98" height="20" forecolor="#FFFFFF" backcolor="#000000" uuid="ef19cb8a-a0bd-42ca-bfae-26b8bf083ddc"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Student Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="396" y="0" width="80" height="20" forecolor="#FFFFFF" backcolor="#000000" uuid="83acee5d-5d2c-44d2-99d2-d4e3f5ae91bb"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField isStretchWithOverflow="true">
+				<reportElement style="style1" stretchType="RelativeToTallestObject" x="1" y="0" width="22" height="20" uuid="d5894f46-de40-486a-94e7-cba3ba1fb794"/>
+				<box leftPadding="2">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="style1" stretchType="RelativeToTallestObject" x="239" y="0" width="71" height="20" uuid="a39401cb-5cf9-4dfe-bc4b-4ad27eb742ac"/>
+				<box rightPadding="3">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CODE}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="style1" stretchType="RelativeToTallestObject" x="23" y="0" width="59" height="20" uuid="dca3bdb4-e9a6-4272-9930-55ba086bac4d"/>
+				<box rightPadding="3">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TABLEID}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="style1" stretchType="RelativeToTallestObject" x="141" y="0" width="98" height="20" uuid="b56150e7-fc8f-4c48-a72d-124802c668c8"/>
+				<box leftPadding="2">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{STDNAME}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="style1" stretchType="RelativeToTallestObject" x="310" y="0" width="86" height="20" uuid="65956661-9ca3-4d89-bd31-02532389d3b7"/>
+				<box leftPadding="3" rightPadding="0">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COURSENAME}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="style1" stretchType="RelativeToTallestObject" x="476" y="0" width="79" height="20" uuid="55993928-896a-4dbd-9f68-fcd189cd58e5"/>
+				<box leftPadding="2" rightPadding="3">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COMVALUE}+" %"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="style1" stretchType="RelativeToTallestObject" x="82" y="0" width="59" height="20" uuid="f64cb07e-20eb-42b7-a4ed-6faa8405ec85"/>
+				<box leftPadding="2" rightPadding="3">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{STDYEAR}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="">
+				<reportElement style="style1" stretchType="RelativeToTallestObject" x="396" y="0" width="80" height="20" uuid="d5da8210-71f1-46d3-a2b1-5b62ebb181d2"/>
+				<box leftPadding="2">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TO_CHAR(P.PAYDATE,'DD/MON/YYYY')}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="20" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="21" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="21" forecolor="#D0B48E" backcolor="#000000" uuid="a76b0850-d588-4863-80d9-7a9b775deb5e"/>
+				<textField>
+					<reportElement x="472" y="0" width="59" height="20" forecolor="#FFFFFF" uuid="6bbc6ada-7c37-46b7-b068-7a5141a5f976"/>
+					<textElement verticalAlignment="Middle">
+						<font size="13"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+				</textField>
+				<textField pattern="EEEEE dd MMMMM yyyy">
+					<reportElement x="0" y="0" width="224" height="21" forecolor="#FFFFFF" uuid="2a3974a0-06f4-45b7-ba82-9282bc60778b"/>
+					<box leftPadding="3"/>
+					<textElement verticalAlignment="Middle">
+						<font size="13"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Report">
+					<reportElement x="531" y="1" width="24" height="20" forecolor="#FFFFFF" uuid="5722c579-45c6-48d7-9a09-4273140243a7"/>
+					<textElement verticalAlignment="Middle">
+						<font size="13"/>
+					</textElement>
+					<textFieldExpression><![CDATA[" "+$V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="108" splitType="Stretch">
+			<staticText>
+				<reportElement x="415" y="88" width="101" height="20" uuid="948fd28d-4472-4a3d-8edb-53dfc66355d0"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[Total Page(s) :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="88" width="116" height="20" uuid="fb912f3b-b460-4cad-af36-05c43f804ca2"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[Total Record(s) :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="516" y="88" width="39" height="20" uuid="b6883710-5fd8-43e8-b1a5-5a22a32c8b95"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="116" y="88" width="67" height="20" uuid="a5736c7e-611a-4cd7-9b0b-0f6341127126"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="232" y="21" width="83" height="20" backcolor="#EBEBEB" uuid="66056e2a-1414-48d8-9e58-7249305cf2ab"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Signature(2)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="485" y="21" width="70" height="20" backcolor="#EBEBEB" uuid="2943a274-56ce-4372-9114-606a609b884a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="232" y="41" width="83" height="20" uuid="961018a2-1d63-4982-8500-c2e6a354006a"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[(___________)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="485" y="41" width="70" height="20" uuid="4da8f0a9-33f4-4c28-adf1-222b3a00dc26"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[(__/__/20__)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="41" width="85" height="20" uuid="9f48974d-3b95-4f84-8ce3-c91de73d2b3d"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[(___________)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="21" width="83" height="20" backcolor="#EBEBEB" uuid="f3b05e5b-ed9c-426b-8c22-c47429617d42"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Signature(1)]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
