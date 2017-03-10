@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <Properties>
+    <Property name="name" type="java.lang.String" value="Form" noResource="true"/>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,0,81,0,0,2,-125"/>
+  </AuxValues>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="btnClear">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="1"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/IconUsed/1469761695_package-purge.png"/>
+        </Property>
+        <Property name="mnemonic" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="KeyEvent.VK_F10" type="code"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="BasicFormsTraining/Bundle.properties" key="top.btnClear.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="BasicFormsTraining/Bundle.properties" key="top.btnClear.toolTipText" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="horizontalTextPosition" type="int" value="0"/>
+        <Property name="iconTextGap" type="int" value="5"/>
+        <Property name="name" type="java.lang.String" value="btnClear" noResource="true"/>
+        <Property name="verticalTextPosition" type="int" value="3"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnAddNew">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="1"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/IconUsed/database-add-icon.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="BasicFormsTraining/Bundle.properties" key="top.btnAddNew.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="horizontalTextPosition" type="int" value="0"/>
+        <Property name="iconTextGap" type="int" value="5"/>
+        <Property name="name" type="java.lang.String" value="btnAddNew" noResource="true"/>
+        <Property name="verticalTextPosition" type="int" value="3"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnEdite">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="1"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/IconUsed/database-iedite.png"/>
+        </Property>
+        <Property name="mnemonic" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="KeyEvent.VK_F2" type="code"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="BasicFormsTraining/Bundle.properties" key="top.btnEdite.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="BasicFormsTraining/Bundle.properties" key="top.btnEdite.toolTipText" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="enabled" type="boolean" value="false"/>
+        <Property name="horizontalTextPosition" type="int" value="0"/>
+        <Property name="iconTextGap" type="int" value="5"/>
+        <Property name="name" type="java.lang.String" value="btnEdite" noResource="true"/>
+        <Property name="verticalTextPosition" type="int" value="3"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnFirst">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="1"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/IconUsed/last.png"/>
+        </Property>
+        <Property name="mnemonic" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="KeyEvent.VK_F8" type="code"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="BasicFormsTraining/Bundle.properties" key="top.btnFirst.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;Go To First Record&#xa;&lt;b&gt;Alt+F8&lt;b/&gt;&#xa;&lt;/html&gt;"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder roundedCorners="true" thickness="2">
+              <Color PropertyName="color" blue="0" green="0" red="ff" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="horizontalTextPosition" type="int" value="0"/>
+        <Property name="iconTextGap" type="int" value="5"/>
+        <Property name="name" type="java.lang.String" value="btnFirst" noResource="true"/>
+        <Property name="verticalTextPosition" type="int" value="3"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnDelete">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="1"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/IconUsed/database-delete-icon.png"/>
+        </Property>
+        <Property name="mnemonic" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="KeyEvent.VK_F3" type="code"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="BasicFormsTraining/Bundle.properties" key="top.btnDelete.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;Remove Record&#xa;&lt;b&gt;Alt+F3&lt;b/&gt;&#xa;&lt;/html&gt;"/>
+        <Property name="enabled" type="boolean" value="false"/>
+        <Property name="horizontalTextPosition" type="int" value="0"/>
+        <Property name="iconTextGap" type="int" value="5"/>
+        <Property name="name" type="java.lang.String" value="btnDelete" noResource="true"/>
+        <Property name="verticalTextPosition" type="int" value="3"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnNext">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="1"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/IconUsed/next.png"/>
+        </Property>
+        <Property name="mnemonic" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="KeyEvent.VK_F7" type="code"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="BasicFormsTraining/Bundle.properties" key="top.btnNext.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;Go To Next Record&#xa;&lt;b&gt;Alt+F7&lt;b/&gt;&#xa;&lt;/html&gt;"/>
+        <Property name="horizontalTextPosition" type="int" value="0"/>
+        <Property name="iconTextGap" type="int" value="5"/>
+        <Property name="name" type="java.lang.String" value="asd" noResource="true"/>
+        <Property name="verticalTextPosition" type="int" value="3"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnPrev">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="12" style="1"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/IconUsed/prev.png"/>
+        </Property>
+        <Property name="mnemonic" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="KeyEvent.VK_F6" type="code"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="BasicFormsTraining/Bundle.properties" key="top.btnPrev.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="BasicFormsTraining/Bundle.properties" key="top.btnPrev.toolTipText" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="horizontalTextPosition" type="int" value="0"/>
+        <Property name="iconTextGap" type="int" value="5"/>
+        <Property name="name" type="java.lang.String" value="btnPrev" noResource="true"/>
+        <Property name="verticalTextPosition" type="int" value="3"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnLast">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="1"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/IconUsed/first.png"/>
+        </Property>
+        <Property name="mnemonic" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="KeyEvent.VK_F5" type="code"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="BasicFormsTraining/Bundle.properties" key="top.btnLast.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="BasicFormsTraining/Bundle.properties" key="top.btnLast.toolTipText" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder roundedCorners="true" thickness="2">
+              <Color PropertyName="color" blue="0" green="0" red="ff" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="horizontalTextPosition" type="int" value="0"/>
+        <Property name="iconTextGap" type="int" value="5"/>
+        <Property name="name" type="java.lang.String" value="btnLast" noResource="true"/>
+        <Property name="verticalTextPosition" type="int" value="3"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnSearch">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="1"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/IconUsed/se1.png"/>
+        </Property>
+        <Property name="mnemonic" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="KeyEvent.VK_F9" type="code"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="BasicFormsTraining/Bundle.properties" key="top.btnSearch.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="BasicFormsTraining/Bundle.properties" key="top.btnSearch.toolTipText" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="horizontalTextPosition" type="int" value="0"/>
+        <Property name="iconTextGap" type="int" value="5"/>
+        <Property name="name" type="java.lang.String" value="btnSearch" noResource="true"/>
+        <Property name="verticalTextPosition" type="int" value="3"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnClose">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="1"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/IconUsed/Error.png"/>
+        </Property>
+        <Property name="mnemonic" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="KeyEvent.VK_F4" type="code"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="BasicFormsTraining/Bundle.properties" key="top.btnClose.text" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;Exit From This Window&#xa;&lt;b&gt;Alt+F4&lt;b/&gt;&#xa;&lt;/html&gt;"/>
+        <Property name="horizontalTextPosition" type="int" value="0"/>
+        <Property name="iconTextGap" type="int" value="5"/>
+        <Property name="name" type="java.lang.String" value="btnClose" noResource="true"/>
+        <Property name="verticalTextPosition" type="int" value="3"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+  </SubComponents>
+  <LayoutCode>
+    <CodeStatement>
+      <CodeExpression id="1__tableLayoutInstance">
+        <CodeVariable name="_tableLayoutInstance" type="20480" declaredType="info.clearthought.layout.TableLayout"/>
+        <ExpressionOrigin>
+          <ExpressionProvider type="CodeConstructor">
+            <CodeConstructor class="info.clearthought.layout.TableLayout" parameterTypes=""/>
+          </ExpressionProvider>
+        </ExpressionOrigin>
+      </CodeExpression>
+      <StatementProvider type="CodeExpression">
+        <CodeExpression id="1__tableLayoutInstance"/>
+      </StatementProvider>
+    </CodeStatement>
+    <CodeStatement>
+      <CodeExpression id="1__tableLayoutInstance"/>
+      <StatementProvider type="CodeMethod">
+        <CodeMethod name="setHGap" class="info.clearthought.layout.TableLayout" parameterTypes="int"/>
+      </StatementProvider>
+      <Parameters>
+        <CodeExpression id="2">
+          <ExpressionOrigin>
+            <Value type="int" value="0"/>
+          </ExpressionOrigin>
+        </CodeExpression>
+      </Parameters>
+    </CodeStatement>
+    <CodeStatement>
+      <CodeExpression id="1__tableLayoutInstance"/>
+      <StatementProvider type="CodeMethod">
+        <CodeMethod name="setVGap" class="info.clearthought.layout.TableLayout" parameterTypes="int"/>
+      </StatementProvider>
+      <Parameters>
+        <CodeExpression id="3">
+          <ExpressionOrigin>
+            <Value type="int" value="0"/>
+          </ExpressionOrigin>
+        </CodeExpression>
+      </Parameters>
+    </CodeStatement>
+    <CodeStatement>
+      <CodeExpression id="1__tableLayoutInstance"/>
+      <StatementProvider type="CodeMethod">
+        <CodeMethod name="setColumn" class="info.clearthought.layout.TableLayout" parameterTypes="[D"/>
+      </StatementProvider>
+      <Parameters>
+        <CodeExpression id="4">
+          <ExpressionOrigin>
+            <Value type="[D" editor="de.berlios.nblayoutpack.tablelayout.TableLayoutSupport$ColumnsEditor">
+              <Columns value="FILL,FILL,FILL,FILL,FILL,FILL,FILL,FILL,FILL,FILL"/>
+            </Value>
+          </ExpressionOrigin>
+        </CodeExpression>
+      </Parameters>
+    </CodeStatement>
+    <CodeStatement>
+      <CodeExpression id="1__tableLayoutInstance"/>
+      <StatementProvider type="CodeMethod">
+        <CodeMethod name="setRow" class="info.clearthought.layout.TableLayout" parameterTypes="[D"/>
+      </StatementProvider>
+      <Parameters>
+        <CodeExpression id="5">
+          <ExpressionOrigin>
+            <Value type="[D" editor="de.berlios.nblayoutpack.tablelayout.TableLayoutSupport$RowsEditor">
+              <Rows value="FILL"/>
+            </Value>
+          </ExpressionOrigin>
+        </CodeExpression>
+      </Parameters>
+    </CodeStatement>
+    <CodeStatement>
+      <CodeExpression id="6">
+        <ExpressionOrigin>
+          <ExpressionProvider type="ComponentRef">
+            <ComponentRef name="."/>
+          </ExpressionProvider>
+        </ExpressionOrigin>
+      </CodeExpression>
+      <StatementProvider type="CodeMethod">
+        <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
+      </StatementProvider>
+      <Parameters>
+        <CodeExpression id="1__tableLayoutInstance"/>
+      </Parameters>
+    </CodeStatement>
+    <CodeStatement>
+      <CodeExpression id="6"/>
+      <StatementProvider type="CodeMethod">
+        <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component, java.lang.Object"/>
+      </StatementProvider>
+      <Parameters>
+        <CodeExpression id="7_btnClear">
+          <CodeVariable name="btnClear" type="8193" declaredType="javax.swing.JButton"/>
+          <ExpressionOrigin>
+            <ExpressionProvider type="ComponentRef">
+              <ComponentRef name="btnClear"/>
+            </ExpressionProvider>
+          </ExpressionOrigin>
+        </CodeExpression>
+        <CodeExpression id="8">
+          <ExpressionOrigin>
+            <ExpressionProvider type="CodeConstructor">
+              <CodeConstructor class="info.clearthought.layout.TableLayoutConstraints" parameterTypes="int, int, int, int, int, int"/>
+            </ExpressionProvider>
+            <Parameters>
+              <CodeExpression id="9">
+                <ExpressionOrigin>
+                  <Value type="int" value="8"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="10">
+                <ExpressionOrigin>
+                  <Value type="int" value="0"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="11">
+                <ExpressionOrigin>
+                  <Value type="int" value="8"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="12">
+                <ExpressionOrigin>
+                  <Value type="int" value="0"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="13">
+                <ExpressionOrigin>
+                  <Value type="int" value="2"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="14">
+                <ExpressionOrigin>
+                  <Value type="int" value="2"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+            </Parameters>
+          </ExpressionOrigin>
+        </CodeExpression>
+      </Parameters>
+    </CodeStatement>
+    <CodeStatement>
+      <CodeExpression id="6"/>
+      <StatementProvider type="CodeMethod">
+        <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component, java.lang.Object"/>
+      </StatementProvider>
+      <Parameters>
+        <CodeExpression id="15_btnAddNew">
+          <CodeVariable name="btnAddNew" type="8193" declaredType="javax.swing.JButton"/>
+          <ExpressionOrigin>
+            <ExpressionProvider type="ComponentRef">
+              <ComponentRef name="btnAddNew"/>
+            </ExpressionProvider>
+          </ExpressionOrigin>
+        </CodeExpression>
+        <CodeExpression id="16">
+          <ExpressionOrigin>
+            <ExpressionProvider type="CodeConstructor">
+              <CodeConstructor class="info.clearthought.layout.TableLayoutConstraints" parameterTypes="int, int, int, int, int, int"/>
+            </ExpressionProvider>
+            <Parameters>
+              <CodeExpression id="17">
+                <ExpressionOrigin>
+                  <Value type="int" value="0"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="18">
+                <ExpressionOrigin>
+                  <Value type="int" value="0"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="19">
+                <ExpressionOrigin>
+                  <Value type="int" value="0"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="20">
+                <ExpressionOrigin>
+                  <Value type="int" value="0"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="21">
+                <ExpressionOrigin>
+                  <Value type="int" value="2"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="22">
+                <ExpressionOrigin>
+                  <Value type="int" value="2"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+            </Parameters>
+          </ExpressionOrigin>
+        </CodeExpression>
+      </Parameters>
+    </CodeStatement>
+    <CodeStatement>
+      <CodeExpression id="6"/>
+      <StatementProvider type="CodeMethod">
+        <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component, java.lang.Object"/>
+      </StatementProvider>
+      <Parameters>
+        <CodeExpression id="23_btnEdite">
+          <CodeVariable name="btnEdite" type="8193" declaredType="javax.swing.JButton"/>
+          <ExpressionOrigin>
+            <ExpressionProvider type="ComponentRef">
+              <ComponentRef name="btnEdite"/>
+            </ExpressionProvider>
+          </ExpressionOrigin>
+        </CodeExpression>
+        <CodeExpression id="24">
+          <ExpressionOrigin>
+            <ExpressionProvider type="CodeConstructor">
+              <CodeConstructor class="info.clearthought.layout.TableLayoutConstraints" parameterTypes="int, int, int, int, int, int"/>
+            </ExpressionProvider>
+            <Parameters>
+              <CodeExpression id="25">
+                <ExpressionOrigin>
+                  <Value type="int" value="1"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="26">
+                <ExpressionOrigin>
+                  <Value type="int" value="0"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="27">
+                <ExpressionOrigin>
+                  <Value type="int" value="1"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="28">
+                <ExpressionOrigin>
+                  <Value type="int" value="0"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="29">
+                <ExpressionOrigin>
+                  <Value type="int" value="2"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="30">
+                <ExpressionOrigin>
+                  <Value type="int" value="2"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+            </Parameters>
+          </ExpressionOrigin>
+        </CodeExpression>
+      </Parameters>
+    </CodeStatement>
+    <CodeStatement>
+      <CodeExpression id="6"/>
+      <StatementProvider type="CodeMethod">
+        <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component, java.lang.Object"/>
+      </StatementProvider>
+      <Parameters>
+        <CodeExpression id="31_btnFirst">
+          <CodeVariable name="btnFirst" type="8201" declaredType="javax.swing.JButton"/>
+          <ExpressionOrigin>
+            <ExpressionProvider type="ComponentRef">
+              <ComponentRef name="btnFirst"/>
+            </ExpressionProvider>
+          </ExpressionOrigin>
+        </CodeExpression>
+        <CodeExpression id="32">
+          <ExpressionOrigin>
+            <ExpressionProvider type="CodeConstructor">
+              <CodeConstructor class="info.clearthought.layout.TableLayoutConstraints" parameterTypes="int, int, int, int, int, int"/>
+            </ExpressionProvider>
+            <Parameters>
+              <CodeExpression id="33">
+                <ExpressionOrigin>
+                  <Value type="int" value="3"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="34">
+                <ExpressionOrigin>
+                  <Value type="int" value="0"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="35">
+                <ExpressionOrigin>
+                  <Value type="int" value="3"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="36">
+                <ExpressionOrigin>
+                  <Value type="int" value="0"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="37">
+                <ExpressionOrigin>
+                  <Value type="int" value="2"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="38">
+                <ExpressionOrigin>
+                  <Value type="int" value="2"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+            </Parameters>
+          </ExpressionOrigin>
+        </CodeExpression>
+      </Parameters>
+    </CodeStatement>
+    <CodeStatement>
+      <CodeExpression id="6"/>
+      <StatementProvider type="CodeMethod">
+        <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component, java.lang.Object"/>
+      </StatementProvider>
+      <Parameters>
+        <CodeExpression id="39_btnDelete">
+          <CodeVariable name="btnDelete" type="8193" declaredType="javax.swing.JButton"/>
+          <ExpressionOrigin>
+            <ExpressionProvider type="ComponentRef">
+              <ComponentRef name="btnDelete"/>
+            </ExpressionProvider>
+          </ExpressionOrigin>
+        </CodeExpression>
+        <CodeExpression id="40">
+          <ExpressionOrigin>
+            <ExpressionProvider type="CodeConstructor">
+              <CodeConstructor class="info.clearthought.layout.TableLayoutConstraints" parameterTypes="int, int, int, int, int, int"/>
+            </ExpressionProvider>
+            <Parameters>
+              <CodeExpression id="41">
+                <ExpressionOrigin>
+                  <Value type="int" value="2"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="42">
+                <ExpressionOrigin>
+                  <Value type="int" value="0"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="43">
+                <ExpressionOrigin>
+                  <Value type="int" value="2"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="44">
+                <ExpressionOrigin>
+                  <Value type="int" value="0"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="45">
+                <ExpressionOrigin>
+                  <Value type="int" value="2"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="46">
+                <ExpressionOrigin>
+                  <Value type="int" value="2"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+            </Parameters>
+          </ExpressionOrigin>
+        </CodeExpression>
+      </Parameters>
+    </CodeStatement>
+    <CodeStatement>
+      <CodeExpression id="6"/>
+      <StatementProvider type="CodeMethod">
+        <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component, java.lang.Object"/>
+      </StatementProvider>
+      <Parameters>
+        <CodeExpression id="47_btnNext">
+          <CodeVariable name="btnNext" type="8201" declaredType="javax.swing.JButton"/>
+          <ExpressionOrigin>
+            <ExpressionProvider type="ComponentRef">
+              <ComponentRef name="btnNext"/>
+            </ExpressionProvider>
+          </ExpressionOrigin>
+        </CodeExpression>
+        <CodeExpression id="48">
+          <ExpressionOrigin>
+            <ExpressionProvider type="CodeConstructor">
+              <CodeConstructor class="info.clearthought.layout.TableLayoutConstraints" parameterTypes="int, int, int, int, int, int"/>
+            </ExpressionProvider>
+            <Parameters>
+              <CodeExpression id="49">
+                <ExpressionOrigin>
+                  <Value type="int" value="5"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="50">
+                <ExpressionOrigin>
+                  <Value type="int" value="0"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="51">
+                <ExpressionOrigin>
+                  <Value type="int" value="5"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="52">
+                <ExpressionOrigin>
+                  <Value type="int" value="0"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="53">
+                <ExpressionOrigin>
+                  <Value type="int" value="2"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="54">
+                <ExpressionOrigin>
+                  <Value type="int" value="2"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+            </Parameters>
+          </ExpressionOrigin>
+        </CodeExpression>
+      </Parameters>
+    </CodeStatement>
+    <CodeStatement>
+      <CodeExpression id="6"/>
+      <StatementProvider type="CodeMethod">
+        <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component, java.lang.Object"/>
+      </StatementProvider>
+      <Parameters>
+        <CodeExpression id="55_btnPrev">
+          <CodeVariable name="btnPrev" type="8201" declaredType="javax.swing.JButton"/>
+          <ExpressionOrigin>
+            <ExpressionProvider type="ComponentRef">
+              <ComponentRef name="btnPrev"/>
+            </ExpressionProvider>
+          </ExpressionOrigin>
+        </CodeExpression>
+        <CodeExpression id="56">
+          <ExpressionOrigin>
+            <ExpressionProvider type="CodeConstructor">
+              <CodeConstructor class="info.clearthought.layout.TableLayoutConstraints" parameterTypes="int, int, int, int, int, int"/>
+            </ExpressionProvider>
+            <Parameters>
+              <CodeExpression id="57">
+                <ExpressionOrigin>
+                  <Value type="int" value="4"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="58">
+                <ExpressionOrigin>
+                  <Value type="int" value="0"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="59">
+                <ExpressionOrigin>
+                  <Value type="int" value="4"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="60">
+                <ExpressionOrigin>
+                  <Value type="int" value="0"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="61">
+                <ExpressionOrigin>
+                  <Value type="int" value="2"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="62">
+                <ExpressionOrigin>
+                  <Value type="int" value="2"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+            </Parameters>
+          </ExpressionOrigin>
+        </CodeExpression>
+      </Parameters>
+    </CodeStatement>
+    <CodeStatement>
+      <CodeExpression id="6"/>
+      <StatementProvider type="CodeMethod">
+        <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component, java.lang.Object"/>
+      </StatementProvider>
+      <Parameters>
+        <CodeExpression id="63_btnLast">
+          <CodeVariable name="btnLast" type="8201" declaredType="javax.swing.JButton"/>
+          <ExpressionOrigin>
+            <ExpressionProvider type="ComponentRef">
+              <ComponentRef name="btnLast"/>
+            </ExpressionProvider>
+          </ExpressionOrigin>
+        </CodeExpression>
+        <CodeExpression id="64">
+          <ExpressionOrigin>
+            <ExpressionProvider type="CodeConstructor">
+              <CodeConstructor class="info.clearthought.layout.TableLayoutConstraints" parameterTypes="int, int, int, int, int, int"/>
+            </ExpressionProvider>
+            <Parameters>
+              <CodeExpression id="65">
+                <ExpressionOrigin>
+                  <Value type="int" value="6"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="66">
+                <ExpressionOrigin>
+                  <Value type="int" value="0"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="67">
+                <ExpressionOrigin>
+                  <Value type="int" value="6"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="68">
+                <ExpressionOrigin>
+                  <Value type="int" value="0"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="69">
+                <ExpressionOrigin>
+                  <Value type="int" value="2"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="70">
+                <ExpressionOrigin>
+                  <Value type="int" value="2"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+            </Parameters>
+          </ExpressionOrigin>
+        </CodeExpression>
+      </Parameters>
+    </CodeStatement>
+    <CodeStatement>
+      <CodeExpression id="6"/>
+      <StatementProvider type="CodeMethod">
+        <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component, java.lang.Object"/>
+      </StatementProvider>
+      <Parameters>
+        <CodeExpression id="71_btnSearch">
+          <CodeVariable name="btnSearch" type="8193" declaredType="javax.swing.JButton"/>
+          <ExpressionOrigin>
+            <ExpressionProvider type="ComponentRef">
+              <ComponentRef name="btnSearch"/>
+            </ExpressionProvider>
+          </ExpressionOrigin>
+        </CodeExpression>
+        <CodeExpression id="72">
+          <ExpressionOrigin>
+            <ExpressionProvider type="CodeConstructor">
+              <CodeConstructor class="info.clearthought.layout.TableLayoutConstraints" parameterTypes="int, int, int, int, int, int"/>
+            </ExpressionProvider>
+            <Parameters>
+              <CodeExpression id="73">
+                <ExpressionOrigin>
+                  <Value type="int" value="7"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="74">
+                <ExpressionOrigin>
+                  <Value type="int" value="0"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="75">
+                <ExpressionOrigin>
+                  <Value type="int" value="7"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="76">
+                <ExpressionOrigin>
+                  <Value type="int" value="0"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="77">
+                <ExpressionOrigin>
+                  <Value type="int" value="2"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="78">
+                <ExpressionOrigin>
+                  <Value type="int" value="2"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+            </Parameters>
+          </ExpressionOrigin>
+        </CodeExpression>
+      </Parameters>
+    </CodeStatement>
+    <CodeStatement>
+      <CodeExpression id="6"/>
+      <StatementProvider type="CodeMethod">
+        <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component, java.lang.Object"/>
+      </StatementProvider>
+      <Parameters>
+        <CodeExpression id="79_btnClose">
+          <CodeVariable name="btnClose" type="8193" declaredType="javax.swing.JButton"/>
+          <ExpressionOrigin>
+            <ExpressionProvider type="ComponentRef">
+              <ComponentRef name="btnClose"/>
+            </ExpressionProvider>
+          </ExpressionOrigin>
+        </CodeExpression>
+        <CodeExpression id="80">
+          <ExpressionOrigin>
+            <ExpressionProvider type="CodeConstructor">
+              <CodeConstructor class="info.clearthought.layout.TableLayoutConstraints" parameterTypes="int, int, int, int, int, int"/>
+            </ExpressionProvider>
+            <Parameters>
+              <CodeExpression id="81">
+                <ExpressionOrigin>
+                  <Value type="int" value="9"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="82">
+                <ExpressionOrigin>
+                  <Value type="int" value="0"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="83">
+                <ExpressionOrigin>
+                  <Value type="int" value="9"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="84">
+                <ExpressionOrigin>
+                  <Value type="int" value="0"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="85">
+                <ExpressionOrigin>
+                  <Value type="int" value="2"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <CodeExpression id="86">
+                <ExpressionOrigin>
+                  <Value type="int" value="2"/>
+                </ExpressionOrigin>
+              </CodeExpression>
+            </Parameters>
+          </ExpressionOrigin>
+        </CodeExpression>
+      </Parameters>
+    </CodeStatement>
+  </LayoutCode>
+</Form>

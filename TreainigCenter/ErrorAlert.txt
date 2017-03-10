@@ -1,0 +1,22 @@
+		>->->* General Error *<-<-<Time Occurs= Sun Jan 08 15:51:40 EET 2017
+Class name= java.lang.RuntimeException: Uncompilable source code - incompatible types: java.lang.String cannot be converted to javax.swing.JLabel
+Error Message= Uncompilable source code - incompatible types: java.lang.String cannot be converted to javax.swing.JLabel
+Error print Stack= java.lang.RuntimeException: Uncompilable source code - incompatible types: java.lang.String cannot be converted to javax.swing.JLabel
+----*************------*************-----
+                            SQL Errors
+
+Time Occurs= Thu Jan 12 14:49:23 EET 2017
+Class name= begin.oppenConn>>When Closed
+Error Code= 28000
+Error Message= ORA-28000: the account is locked
+
+Local Message= ORA-28000: the account is locked
+
+Error SQL State= 99999
+Global SQL= SELECT    adding,edite,remove,viewdata,showform FROM users JOIN VALIDATIONS on VALIDATIONS.USER_ID = users.USER_ID  where USERName ='admin' and password='admin' and FormID='payroll.StudentPayment'
+
+Internal Method SQL= No Internal Closed Connection
+
+Error print Stack= java.sql.SQLException: ORA-28000: the account is locked
+
+----*************------*************-----
